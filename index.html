@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olympics Analytics Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">OLYMPIC</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Analytics</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading"><span>OLYMICS Q & A</span> ANALYSIS</h1>
+        <p class="hero__description">
+          120 years of Olympic history: athletes and results
+        </p>
+        <button class="main__btn">
+          <a
+            href="https://drive.google.com/file/d/1hSkt7nZMDFekLliTcKVNl3T71EKrOTXO/view?usp=sharing"
+            >Dataset</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card">
+            <img src="./image/olympic.jpg" alt="" />
+          </div>
+        </div>
+        <div class="main__content">
+          <h1>ABOUT DATASET</h1>
+          <p>
+            This is a Kaggle-sourced historical dataset on the modern Olympic
+            Games, which includes all games from Athens 1896 through Rio 2016.
+            Up to 1992, the Winter and Summer Games were held in the same year.
+            After that, they staggered them such that the Winter Games begin in
+            1994, then the Summer Games in 1996, the Winter Games in 1998, and
+            so on. When evaluating this data, many individuals make the error of
+            assuming that the Summer and Winter Games have always been
+            staggered.
+          </p>
+          <br />
+          <br />
+          <h1>PROJECT GOAL</h1>
+          <p>
+            The goal of this project is to independently use Python, SQL and
+            Excel to to answer all 20 questions utilizing a dataset including
+            120 years of Olympic history and out come.
+          </p>
+          <br />
+          <br />
+          <h1>CONTENT</h1>
+          <p>
+            The file athlete_events.csv contains 271116 rows and 15 columns.
+            Each row corresponds to an individual athlete competing in an
+            individual Olympic event (athlete-events). The columns are:
+          </p>
+          <ul>
+            <li>ID - Unique number for each athlete</li>
+            <li>Name - Athlete's name</li>
+            <li>Sex - M or F</li>
+            <li>Age - Integer</li>
+            <li>Height - In centimeters</li>
+            <li>Weight - In kilograms</li>
+            <li>Team - Team name</li>
+            <li>NOC - National Olympic Committee 3-letter code</li>
+            <li>Games - Year and season</li>
+            <li>Year - Integer</li>
+            <li>Season - Summer or Winter</li>
+            <li>City - Host city</li>
+            <li>Sport - Sport</li>
+            <li>Event - Event</li>
+            <li>Medal - Gold, Silver, Bronze, or NA</li>
+          </ul>
+          <br />
+          <br />
+          <h1>QUERY QUESTIONS</h1>
+          <p>List of all these 20 queries mentioned below:</p>
+          <ul>
+            <li>How many olympics games have been held?</li>
+            <li>List down all Olympics games held so far.</li>
+            <li>
+              Mention the total no of nations who participated in each olympics
+              game?
+            </li>
+            <li>
+              Which year saw the highest and lowest no of countries
+              participating in olympics?
+            </li>
+            <li>Which nation has participated in all of the olympic games?</li>
+            <li>Identify the sport which was played in all summer olympics.</li>
+            <li>Which Sports were just played only once in the olympics?</li>
+            <li>Fetch the total no of sports played in each olympic games.</li>
+            <li>Fetch details of the oldest athletes to win a gold medal.</li>
+            <li>
+              Find the Ratio of male and female athletes participated in all
+              olympic games.
+            </li>
+            <li>Fetch the top 5 athletes who have won the most gold medals.</li>
+            <li>
+              Fetch the top 5 athletes who have won the most medals
+              (gold/silver/bronze).
+            </li>
+            <li>
+              Fetch the top 5 most successful countries in olympics. Success is
+              defined by no of medals won.
+            </li>
+            <li>
+              List down total gold, silver and broze medals won by each country.
+            </li>
+            <li>
+              List down total gold, silver and broze medals won by each country
+              corresponding to each olympic games.
+            </li>
+            <li>
+              Identify which country won the most gold, most silver and most
+              bronze medals in each olympic games.
+            </li>
+            <li>
+              Identify which country won the most gold, most silver, most bronze
+              medals and the most medals in each olympic games.
+            </li>
+            <li>
+              Which countries have never won gold medal but have won
+              silver/bronze medals?
+            </li>
+            <li>In which Sport/event, India has won highest medals.</li>
+            <li>
+              Break down all olympic games where india won medal for Hockey and
+              how many medals in each olympic games.
+            </li>
+          </ul>
+          <button class="main__btn">
+            <a href="https://github.com/Aregbesolazeez/olympic_Q-A_analysis"
+              >Git Repo</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>ANALYTICS</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Analytics Using Python</h2>
+          <div class="services__btn">
+            <button class="main__btn">
+              <a
+                href="https://github.com/Aregbesolazeez/olympic_Q-A_analysis/blob/main/Olympics.ipynb"
+                >View</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="services__card">
+          <h2>Analytics Using SQL</h2>
+          <div class="services__btn">
+            <button class="main__btn">
+              <a
+                href="https://docs.google.com/presentation/d/1lmNW9kROBc6KfU7FXHTQkzJibDDPc6v0/edit#slide=id.p3"
+                >View</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="services__card">
+          <h2>Analytics Using Excel</h2>
+          <div class="services__btn">
+            <button class="main__btn">
+              <a
+                href="https://docs.google.com/spreadsheets/d/11TilyOklof-pLr3PnbGJFMIT3Pu48lhi/edit#gid=640097547"
+                >View</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="services__card">
+          <h2>Google Drive</h2>
+          <div class="services__btn">
+            <button class="main__btn">
+              <a
+                href="https://drive.google.com/drive/folders/1z0IC54BcP6tuKQhEsoV-0_SVgu2G1OUI?usp=sharing"
+                >View</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Contact Me</h1>
+          <p>See what makes me different</p>
+          <button class="main__btn">
+            <a href="https://www.linkedin.com/in/aregbesolazeez/">Contact Me</a>
+          </button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <img class="circular--square" src="./image/image.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
